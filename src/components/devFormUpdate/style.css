@@ -1,0 +1,18 @@
+aside form .cancelar {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+aside form .cancelar a {
+  color: #cd5c5c;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+aside form .cancelar a:hover {
+  opacity: 0.5;
+}

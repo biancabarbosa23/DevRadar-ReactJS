@@ -3,6 +3,7 @@ li.dev-item {
   box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.02);
   border-radius: 2px;
   padding: 20px;
+  padding-right: 10px;
 }
 
 li.dev-item header {
@@ -33,6 +34,31 @@ li.dev-item header .user-info {
   margin-top: 2px;
 }
 
+li.dev-item header .button-excluir {
+  display: flex;
+  flex: 1;
+  margin-left: 12px;
+  margin-right: 10px;
+  justify-content: flex-end;
+  align-self: flex-start;
+}
+
+header .button-excluir button {
+  padding: 4px 5px;
+  border: 0;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  background: #cd5c5c;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+header .button-excluir button:hover {
+  background: #a52a2a;
+}
+
 li.dev-item p {
   color: #666;
   font-size: 14px;
@@ -40,13 +66,25 @@ li.dev-item p {
   margin: 10px 0;
 }
 
-li.dev-item a {
+li.dev-item .items-a {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  margin-bottom: 3px;
+}
+
+li.dev-item .items-a a + a {
+  margin-top: 5px;
+}
+
+li.dev-item .items-a a {
   color: #8e4dff;
   font-size: 14px;
   text-decoration: none;
   transition: 0.2s;
+  cursor: pointer;
 }
 
-li.dev-item a:hover {
+li.dev-item .items-a a:hover {
   color: #5a2ea6;
 }
