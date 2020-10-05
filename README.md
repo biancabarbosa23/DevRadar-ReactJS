@@ -28,7 +28,7 @@ $ yarn start
 ### Configuração
 
 - Baixar o Backend
-  [Backend](https://github.com/biancabarbosa23/Mind-Consulting-Backend.git)
+  [Backend](https://github.com/biancabarbosa23/DevRadar-Backend.git)
 - Iniciar o servidor (backend)
 
 ```
