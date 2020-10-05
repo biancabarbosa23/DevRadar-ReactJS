@@ -48,7 +48,7 @@ function App() {
   async function handleUpdateDev(data) {
     const { name, bio, techs, latitude, longitude } = data
 
-    const response = await api.put(`/devs/${devId}`, {
+    await api.put(`/devs/${devId}`, {
       name, bio, techs, latitude, longitude
     })
 

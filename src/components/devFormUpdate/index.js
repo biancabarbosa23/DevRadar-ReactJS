@@ -6,7 +6,6 @@ import './style.css'
 
 
 function DevFormUpdate({ onSubmit, onShow, idDev }) {
-    const [id, setId] = useState('')
     const [latitude, setLatitude] = useState('')
     const [longitude, setLongitude] = useState('')
     const [name, setname] = useState('')
@@ -16,13 +15,12 @@ function DevFormUpdate({ onSubmit, onShow, idDev }) {
     useEffect(() => {
         //pegar indo do usuario
         async function loadDev() {
-            setId(idDev)
             const response = await api.get(`/devs/${idDev}`)
             const { name, bio, techs, location: { coordinates } } = response.data
 
             setname(name)
             setBio(bio)
-            setTechs(techs)
+            setTechs(techs.join(', '))
             setLatitude(coordinates[1])
             setLongitude(coordinates[0])
 
